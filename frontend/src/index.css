@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Montserrat:wght@200;400&family=Open+Sans:wght@400;600&family=Roboto:wght@400;500&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+  /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; */
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body{
+  overflow-y: hidden;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: whitesmoke;
+}
+.screen2{
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%);
+}
+.hover1:hover{
+  transform: scaleY(1.1);
+  transition: all ease-in-out;
+}
+.hover2:hover{
+  transform: scaleY(1.2);
+  transition: all ease-in-out;
+}
+.hover3:hover{
+  transform: scaleY(1.2);
+  transition: all ease-in-out;
+}
+.hover4:hover{
+  transform: scaleY(1.2);
+  transition: all ease-in-out;
+}
+.hover5:hover{
+  transform: scaleY(1.2);
+  transition: all ease-in-out;
+}
+.animated{
+  animation: pop-in 1.5s cubic-bezier(0.68, -0.55, 0.65, 0.52) forwards;
+  transition: all ease-in-out 2s;
+}
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: 50px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 6px solid;
+  border-color: #000 #0000;
+  animation: l1 1s infinite;
+}
+@keyframes l1 {to{transform: rotate(1turn)}}
+@keyframes pop-in {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  80% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
